@@ -40,6 +40,16 @@ if has('persistent_undo')
   set undofile
 endif
 
+" Open netrw file explorer on open
+autocmd VimEnter * :Vexplore
+autocmd TabNew * call feedkeys(":Vexplore\<CR>", 'n')
+" Changes the directory tree style, in netrw can i to cycle through the styles temporarily
+let g:netrw_liststyle = 3
+" Sets netrw default size to 20% of screen
+let g:netrw_winsize = 20
+" Removes netrw banner
+let g:netrw_banner = 0
+
 
 " Begin Plugins
 call plug#begin()
