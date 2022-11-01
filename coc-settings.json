@@ -1,5 +1,6 @@
 {
   "coc.preferences.formatOnSaveFiletypes": ["py", "json"],
   "python.linting.flake8Enabled": true,
-  "python.formatting.provider": "black"
+  "python.formatting.provider": "black",
+  "suggest.noselect": true
 }
