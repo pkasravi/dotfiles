@@ -45,12 +45,18 @@ endif
 " autocmd TabNew * call feedkeys(":Vexplore\<CR>", 'n')
 " Sets netrw default size to 20% of screen
 " let g:netrw_winsize = 20
+
 " If not explicitly opening a file, open netrw
 autocmd VimEnter * if expand("%") == "" | edit . | endif
 " Changes the directory tree style, in netrw can i to cycle through the styles temporarily
 let g:netrw_liststyle = 3
 " Removes netrw banner
 let g:netrw_banner = 0
+
+" Autoformat Python files on save using black
+autocmd BufWritePre *.py execute ':silent! %!black --quiet -'
+" Autoformat C++ files on save using clang-format with Google style
+autocmd BufWritePre *.cc,*.cpp,*.h,*.hpp execute ':silent! %!clang-format -style=Google'
 
 
 " Begin Plugins
