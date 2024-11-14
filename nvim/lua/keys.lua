@@ -1,5 +1,8 @@
 --[[ keys.lua ]]
-local map = vim.api.nvim_set_keymap
 
--- remap the key used to leave insert mode
-map('i', 'jk', '', {})
+-- This file is used to setup keyboard macros
+-- Ex:
+-- vim.g.mapleader = " "                	-- This sets our "leader" key to Space
+-- local keymap = vim.keymap            	-- So we can use shorthand
+-- keymap.set('i', 'jk', 'ESC', {})     	-- When in Insert mode set "jk" equal to ESC (i.e. exit Insert mode)
+-- keymap.set('i', '<Leader>jk', 'ESC', {})     -- When in Insert mode set " jk" equal to ESC (i.e. exit Insert mode)

@@ -15,6 +15,7 @@ opt.fileencoding = 'utf8'        -- str:  File encoding to use
 -- [[ Theme ]]
 opt.syntax = "ON"                -- str:  Allow syntax highlighting
 opt.termguicolors = true         -- bool: If term supports ui color then enable
+opt.background = "dark"		 -- str: (light/dark) color scheme selection
 
 -- [[ Search ]]
 opt.ignorecase = true            -- bool: Ignore case in search patterns
@@ -24,10 +25,20 @@ opt.hlsearch = false             -- bool: Highlight search matches
 
 -- [[ Whitespace ]]
 opt.expandtab = true             -- bool: Use spaces instead of tabs
-opt.shiftwidth = 4               -- num:  Size of an indent
-opt.softtabstop = 4              -- num:  Number of spaces tabs count for in insert mode
-opt.tabstop = 4                  -- num:  Number of spaces tabs count for
+opt.shiftwidth = 2               -- num:  Size of an indent
+opt.autoindent = true            -- bool: Copy indent from previous line
+opt.softtabstop = 2              -- num:  Number of spaces tabs count for in insert mode
+opt.tabstop = 2                  -- num:  Number of spaces tabs count for
 
 -- [[ Splits ]]
 opt.splitright = true            -- bool: Place new window to right of current one
 opt.splitbelow = true            -- bool: Place new window below the current one
+
+-- [[ Lines ]]
+opt.relativenumber = true        -- bool: Line numbers relative to cursor
+opt.number = true                -- bool: Show line numbers
+opt.wrap = false                 -- bool: Wrap lines automatically
+opt.cursorline = true		 -- bool: Highlight the cursor with a horizontal line
+
+-- [[ Clipboard ]]
+opt.clipboard:append("unnamedplus") -- use system clipboard as default register

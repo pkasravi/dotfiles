@@ -3,11 +3,12 @@
 -- LEADER
 -- These keybindings need to be defined before the first /
 -- is called; otherwise, it will default to "\"
-vim.g.mapleader = ","
-vim.g.localleader = "\\"
+-- See lua/vars.lua for more info on Leader
+-- vim.g.mapleader = ","
+-- vim.g.localleader = "\\"
 
 -- IMPORTS
 require('vars')      -- Variables
 require('opts')      -- Options
 require('keys')      -- Keymaps
-require('plug')      -- Plugins
+require('plug')      -- Lazy Plugin Manager https://github.com/folke/lazy.nvim
