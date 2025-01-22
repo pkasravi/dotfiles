@@ -15,8 +15,7 @@ opt.fileencoding = 'utf8'        -- str:  File encoding to use
 -- [[ Theme ]]
 opt.syntax = "ON"                -- str:  Allow syntax highlighting
 opt.termguicolors = true         -- bool: If term supports ui color then enable
-opt.background = "dark"		       -- str: (light/dark) color scheme selection
-opt.colorcolumn = 80             -- str: Line of color at char 80
+opt.background = "dark"          -- str: (light/dark) color scheme selection
 
 -- [[ Search ]]
 opt.ignorecase = true            -- bool: Ignore case in search patterns
@@ -39,7 +38,7 @@ opt.splitbelow = true            -- bool: Place new window below the current one
 opt.relativenumber = true        -- bool: Line numbers relative to cursor
 opt.number = true                -- bool: Show line numbers
 opt.wrap = false                 -- bool: Wrap lines automatically
-opt.cursorline = true		         -- bool: Highlight the cursor with a horizontal line
+opt.cursorline = true            -- bool: Highlight the cursor with a horizontal line
 
 -- [[ Mouse ]]
 opt.mouse = "a"                  -- str: Use mouse in all modes
